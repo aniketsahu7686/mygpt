@@ -1,0 +1,63 @@
+{
+  "compilerOptions": {
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022",
+    "sourceMap": true,
+    "outDir": "dist",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["src/**/*.ts", "src/index.ts"]
+}
+
+
+// Overview of the Configuration:
+// This file tells TypeScript how to behave when it compiles your TypeScript files (.ts) into JavaScript. Here’s what each part means in simple terms:
+
+// json
+// Copy code
+// {
+//   "compilerOptions": {
+//     // Options that affect how TypeScript compiles your code.
+//   },
+//   "include": [
+//     // Tells TypeScript which files to include in the project.
+//   ]
+// }
+// Breakdown of Each Option:
+// 1. compilerOptions:
+// This section contains various settings that affect the compilation of TypeScript code.
+
+// module: "NodeNext":
+
+// This option tells TypeScript to use the Node.js module system that supports the latest JavaScript features.
+// It helps TypeScript understand how to import and export modules in your code.
+// moduleResolution: "NodeNext":
+
+// This setting defines how TypeScript should look for modules when you import them. Using "NodeNext" means it will follow Node.js's way of finding files, allowing for modern practices.
+// target: "ES2022":
+
+// This tells TypeScript to compile your code to the ECMAScript 2022 standard, which means it will generate JavaScript that uses features available in that version.
+// It allows you to use the latest JavaScript features in your TypeScript code.
+// sourceMap: true:
+
+// When set to true, TypeScript will generate a source map file along with your compiled JavaScript. This helps in debugging, as it allows you to see the original TypeScript code in the browser’s developer tools instead of the compiled JavaScript.
+// outDir: "dist":
+
+// This specifies where the compiled JavaScript files should be saved. In this case, it will save them in a folder named dist.
+// It helps keep your project organized by separating your source files from the compiled files.
+// allowSyntheticDefaultImports: true:
+
+// This option allows you to import modules in a certain way that might not follow the traditional JavaScript style.
+// It makes it easier to work with certain libraries that may not have default exports.
+// 2. include:
+// This section tells TypeScript which files to consider when compiling the project.
+
+// "src/**/*.ts":
+// This means to include all .ts files in the src folder and any of its subfolders (the ** means any level of subfolder).
+// "src/index.ts":
+// This specifically includes the index.ts file located directly in the src folder.
+// Summary:
+// In summary, this tsconfig.json file is a configuration for a TypeScript project that tells TypeScript how to compile the code, 
+// what JavaScript features to use, where to find the source files, and where to save the compiled output. It helps ensure your TypeScript
+//  project is set up correctly and functions as intended.
