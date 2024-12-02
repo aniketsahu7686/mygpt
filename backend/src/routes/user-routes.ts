@@ -18,4 +18,6 @@ userRoutes.post("/signup", validate(signUpValidator), userSignup);
 // User login route with validation
 userRoutes.post("/login", validate(loginValidator), userLogin);
 
+userRoutes.get("/auth-status",userLogin);
+
 export default userRoutes;
